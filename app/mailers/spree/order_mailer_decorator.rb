@@ -3,9 +3,16 @@ Spree::OrderMailer.class_eval do
     @order = order
     subject = (resend ? "[#{t(:resend).upcase}] " : '')
     subject += "#{Spree::Config[:site_name]} #{t('order_mailer.confirm_email.subject')} ##{order.number}"
-    mail(to: order.email, subject: subject) do |format|
-      format.text
-      format.html
+    if order.dibs_referral
+      mail(to: order.email, subject: subject, cc: order.dibs_referral.email) do |format|
+        format.text
+        format.html
+      end
+    else
+      mail(to: order.email, subject: subject) do |format|
+        format.text
+        format.html
+      end
     end
   end
 
@@ -13,9 +20,16 @@ Spree::OrderMailer.class_eval do
     @order = order
     subject = (resend ? "[#{t(:resend).upcase}] " : '')
     subject += "#{Spree::Config[:site_name]} #{t('order_mailer.cancel_email.subject')} ##{order.number}"
-    mail(to: order.email, subject: subject) do |format|
-      format.text
-      format.html
+    if order.dibs_referral
+      mail(to: order.email, subject: subject, cc: order.dibs_referral.email) do |format|
+        format.text
+        format.html
+      end
+    else
+      mail(to: order.email, subject: subject) do |format|
+        format.text
+        format.html
+      end
     end
   end
 
@@ -23,9 +37,16 @@ Spree::OrderMailer.class_eval do
     @order = order
     subject = (resend ? "[#{t(:resend).upcase}] " : '')
     subject += "#{Spree::Config[:site_name]} #{t('order_mailer.void_email.subject')} ##{order.number}"
-    mail(to: order.email, subject: subject) do |format|
-      format.text
-      format.html
+    if order.dibs_referral
+      mail(to: order.email, subject: subject, cc: order.dibs_referral.email) do |format|
+        format.text
+        format.html
+      end
+    else
+      mail(to: order.email, subject: subject) do |format|
+        format.text
+        format.html
+      end
     end
   end
 
@@ -33,9 +54,16 @@ Spree::OrderMailer.class_eval do
     @order = order
     subject = (resend ? "[#{t(:resend).upcase}] " : '')
     subject += "#{Spree::Config[:site_name]} #{t('order_mailer.capture_email.subject')} ##{order.number}"
-    mail(to: order.email, subject: subject) do |format|
-      format.text
-      format.html
+    if order.dibs_referral
+      mail(to: order.email, subject: subject, cc: order.dibs_referral.email) do |format|
+        format.text
+        format.html
+      end
+    else
+      mail(to: order.email, subject: subject) do |format|
+        format.text
+        format.html
+      end
     end
   end
 end
