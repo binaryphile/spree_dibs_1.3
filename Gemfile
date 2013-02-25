@@ -37,7 +37,7 @@ gem 'foreman', group: :production
 
 # To use debugger
 #gem 'debugger'
-gem 'spree', github: 'spree/spree', branch: '1-3-stable'
+gem 'spree', github: 'lilleyt/spree', branch: 'develop' # Until https://github.com/spree/spree/pull/2607 is accepted
 gem 'spree_gateway', github: 'spree/spree_gateway', branch: '1-3-stable'
 gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: '1-3-stable'
 gem 'devise-encryptable'
