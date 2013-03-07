@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130205194805) do
+ActiveRecord::Schema.define(:version => 20130306184306) do
 
   create_table "product_customization_types_products", :id => false, :force => true do |t|
     t.integer "product_customization_type_id"
@@ -326,6 +326,8 @@ ActiveRecord::Schema.define(:version => 20130205194805) do
     t.string   "identifier"
   end
 
+  add_index "spree_payments", ["order_id"], :name => "index_spree_payments_on_order_id"
+
   create_table "spree_preferences", :force => true do |t|
     t.text     "value"
     t.string   "key"
@@ -405,7 +407,7 @@ ActiveRecord::Schema.define(:version => 20130205194805) do
   add_index "spree_products_promotion_rules", ["product_id"], :name => "index_products_promotion_rules_on_product_id"
   add_index "spree_products_promotion_rules", ["promotion_rule_id"], :name => "index_products_promotion_rules_on_promotion_rule_id"
 
-  create_table "spree_products_taxons", :id => false, :force => true do |t|
+  create_table "spree_products_taxons", :force => true do |t|
     t.integer "product_id"
     t.integer "taxon_id"
   end
