@@ -45,3 +45,4 @@ gem 'spree_flexi_variants', github: 'lilleyt/spree_flexi_variants' # Until https
 gem 'spree_print_invoice', github: 'lilleyt/spree_print_invoice', branch: '1-3-stable' # Until https://github.com/spree/spree_print_invoice/pull/22 is accepted
 gem 'spree_dibs_referral', github: 'lilleyt/spree_dibs_referral' # My extension so should come from my repo
 gem 'spree_email_to_friend', github: 'lilleyt/spree_email_to_friend', branch: '1-3-stable' # Cap deploy error fixed in my repo but not upstream - have to maintain
+gem 'select2-rails', github: 'argerim/select2-rails' # Until https://github.com/spree/spree/issues/2597 is closed

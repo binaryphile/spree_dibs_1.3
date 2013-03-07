@@ -1,4 +1,12 @@
 GIT
+  remote: git://github.com/argerim/select2-rails.git
+  revision: 52d93245ce3e3232a568d405425b71a05ad2ffc2
+  specs:
+    select2-rails (3.3.1)
+      sass-rails (>= 3.2)
+      thor (~> 0.14)
+
+GIT
   remote: git://github.com/lilleyt/spree.git
   revision: ff07e542cce311536929b0f365f2826f3802ee48
   branch: develop
@@ -297,9 +305,6 @@ GEM
       nokogiri (>= 1.4.0)
       nori (~> 2.0.3)
       wasabi (~> 3.0.0)
-    select2-rails (3.3.0)
-      sass-rails (~> 3.2)
-      thor (~> 0.14)
     sprockets (2.2.2)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -347,6 +352,7 @@ DEPENDENCIES
   mysql2
   rails (= 3.2.12)
   sass-rails (~> 3.2.3)
+  select2-rails!
   spree!
   spree_auth_devise!
   spree_dibs_referral!
