@@ -11,7 +11,7 @@ role :app, '192.168.0.118'
 role :db,  '192.168.0.118', :primary => true
 
 set :scm, :git
-set :repository,  "git://github.com/lilleyt/spree_dibs_1.3.git"
+set :repository,  "git://github.com/binaryphile/spree_dibs_1.3.git"
 set :branch,      "master"
 set :deploy_to,   "/data/#{application}"
 set :deploy_via,  :remote_cache
