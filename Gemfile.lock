@@ -69,17 +69,6 @@ GIT
       spree_core (~> 1.3.0)
 
 GIT
-  remote: git://github.com/binaryphile/spree_flexi_variants.git
-  revision: d5c5966261a472fd9edcc65d970e4dbc772b3b97
-  branch: develop
-  specs:
-    spree_flexi_variants (1.0.0)
-      carrierwave
-      json
-      mini_magick
-      spree_core (~> 1.2)
-
-GIT
   remote: git://github.com/binaryphile/spree_print_invoice.git
   revision: b6d7ba6de2964fdfa91453a79303673d6d0d0b90
   branch: 1-3-stable
@@ -87,6 +76,16 @@ GIT
     spree_print_invoice (1.0.0)
       prawn (= 0.8.4)
       spree_core (~> 1.3.0)
+
+GIT
+  remote: git://github.com/jsqu99/spree_flexi_variants.git
+  revision: ff1f028ae0393347feade4c0c123c5853bfe4f32
+  branch: spree-1-3-stable
+  specs:
+    spree_flexi_variants (1.0.0)
+      carrierwave
+      mini_magick
+      spree_core (~> 1.3)
 
 GIT
   remote: git://github.com/spree/spree_auth_devise.git
