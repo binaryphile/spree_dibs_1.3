@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130514200155) do
+ActiveRecord::Schema.define(:version => 21030514200156) do
 
   create_table "product_customization_types_products", :id => false, :force => true do |t|
     t.integer "product_customization_type_id"
@@ -182,6 +182,50 @@ ActiveRecord::Schema.define(:version => 20130514200155) do
     t.datetime "created_at",                     :null => false
     t.datetime "updated_at",                     :null => false
     t.string   "customization_image"
+  end
+
+  create_table "spree_dibs_referral_profiles", :force => true do |t|
+    t.integer  "user_id"
+    t.string   "firstname"
+    t.string   "lastname"
+    t.string   "company"
+    t.string   "raa_agree"
+    t.string   "nda_agree"
+    t.string   "company_dba"
+    t.string   "num_emp"
+    t.string   "website"
+    t.string   "comp_desc"
+    t.string   "fax"
+    t.string   "corp_fax"
+    t.string   "ref_name"
+    t.string   "ref_email"
+    t.string   "sales_name"
+    t.string   "sales_email"
+    t.string   "support_name"
+    t.string   "support_email"
+    t.string   "mgr_name"
+    t.string   "mgr_email"
+    t.string   "authorized"
+    t.string   "payee"
+    t.string   "tax_id"
+    t.string   "biz_type"
+    t.string   "biz_demo"
+    t.string   "address1"
+    t.string   "address2"
+    t.string   "phone"
+    t.string   "city"
+    t.string   "state_name"
+    t.string   "zipcode"
+    t.string   "country"
+    t.string   "corporate_address1"
+    t.string   "corporate_address2"
+    t.string   "corporate_phone"
+    t.string   "corporate_city"
+    t.string   "corporate_state_name"
+    t.string   "corporate_zipcode"
+    t.string   "corporate_country"
+    t.datetime "created_at",           :null => false
+    t.datetime "updated_at",           :null => false
   end
 
   create_table "spree_excluded_ad_hoc_option_values", :force => true do |t|
@@ -659,10 +703,10 @@ ActiveRecord::Schema.define(:version => 20130514200155) do
     t.integer  "product_id"
     t.integer  "count_on_hand",                               :default => 0
     t.decimal  "cost_price",    :precision => 8, :scale => 2
-    t.string   "cost_currency"
     t.integer  "position"
     t.integer  "lock_version",                                :default => 0
     t.boolean  "on_demand",                                   :default => false
+    t.string   "cost_currency"
   end
 
   add_index "spree_variants", ["product_id"], :name => "index_spree_variants_on_product_id"
