@@ -5,7 +5,6 @@
     _gaq.push(['_setAccount', '<%= tracker.analytics_id %>']);
     _gaq.push(['_setDomainName', 'diditbetter.com']);
     _gaq.push(['_trackPageview']);
-    _gaq.push(['_trackPageLoadTime']);
 
     <% if flash[:commerce_tracking] && @order.present? %>
       <%# more info: https://developers.google.com/analytics/devguides/collection/gajs/methods/gaJSApiEcommerce %>
