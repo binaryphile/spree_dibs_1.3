@@ -16,7 +16,26 @@ module ApplicationHelper
     @order.adjustments.each do |adjustment|
       product_info << "#{raw(adjustment.label)} #{number_to_currency(adjustment.amount)}"
     end
+    footer = <<-eos
+      Helpful Resources:
+
+      Troubleshooting
+      http://support.diditbetter.com/Forums/Thread.aspx?pageid=1&mid=2&ItemID=1&thread=125
+
+      Upgrading Add2Exchange
+      http://support.diditbetter.com/kb/A2E_194.aspx
+
+      How Add2Exchange Works
+      http://support.diditbetter.com/Forums/Thread.aspx?pageid=1&mid=2&ItemID=3&thread=80
+
+      How to terminate an employee with a  sync relationship
+      http://support.diditbetter.com/Forums/Thread.aspx?pageid=1&mid=2&ItemID=1&thread=136
+
+      Licensing
+      http://support.diditbetter.com/product-activation.aspx
+    eos
+      
     product_info << "Order Total: #{number_to_currency(@order.total)}"
-    "Click here to purchase:\n\nhttp://#{Spree::Config[:site_url]}/dibs-referral?dibs_referral=#{URI::encode_www_form_component @current_user.email}&#{@order.dibs_referral_line_items.to_param}\n\n#{product_info.join("\n")}"
+    "Click here to purchase:\n\nhttp://#{Spree::Config[:site_url]}/dibs-referral?dibs_referral=#{URI::encode_www_form_component @current_user.email}&#{product_info.join("\n")}\n\n#{@order.dibs_referral_line_items.to_param}\n\n#{footer}"
   end
 end
