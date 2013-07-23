@@ -36,6 +36,6 @@ module ApplicationHelper
     eos
       
     product_info << "Order Total: #{number_to_currency(@order.total)}"
-    "Click here to purchase:\n\nhttp://#{Spree::Config[:site_url]}/dibs-referral?dibs_referral=#{URI::encode_www_form_component @current_user.email}&#{product_info.join("\n")}\n\n#{@order.dibs_referral_line_items.to_param}\n\n#{footer}"
+    "#{product_info.join("\n")}\n\nClick here to purchase:\n\nhttp://#{Spree::Config[:site_url]}/dibs-referral?dibs_referral=#{URI::encode_www_form_component @current_user.email}&#{@order.dibs_referral_line_items.to_param}\n\n#{footer}"
   end
 end
