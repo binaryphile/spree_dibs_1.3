@@ -2,20 +2,34 @@
 <body>
 <p>Dear <%= @order.bill_address.firstname %>,</p>
 
-<p>Thank you for placing your order at DidItBetter.com. Your order should
-be reviewed and processed within 24 to 48 hours. Once your order has
-been processed, you will receive an email from DidItBetter.com.</p>
-
-<p>Please review and retain the following order information for your
-records.</p>
+<p>Thank you for your DidItBetter.com Software order. Your payment has been
+processed.</p>
 
 <p><strong>Billing address:</strong></p>
-<p><strong><%= @order.bill_address.full_name %></strong><br />
+<p>
+ <strong><%= @order.bill_address.full_name %></strong><br />
+ <% if @order.bill_address.company != "" %>
+   <%= @order.bill_address.company %><br />
+ <% end %>
+ <% if @order.bill_address.phone != "" %>
+   <%= @order.bill_address.phone %><br />
+ <% end %>
+ <% if @order.email != "" %>
+   <%= @order.email %><br />
+ <% end %>
 <%= @order.bill_address.address1 %><br />
 <% if @order.bill_address.address2 != "" %>
 <%= @order.bill_address.address2 %><br />
 <% end %>
-<%= @order.bill_address.city %><% if @order.bill_address.state %>, <%= @order.bill_address.state.abbr %><% end %>  <%= @order.bill_address.zipcode %><% if @order.bill_address.country.iso3 != "USA" %> <%= @order.bill_address.country.iso3 %><% end %></p>
+ <%= @order.bill_address.city %>
+ <% if @order.bill_address.state %>
+   , <%= @order.bill_address.state.abbr %>
+ <% end %>
+ <%= @order.bill_address.zipcode %>
+ <% if @order.bill_address.country.iso3 != "USA" %>
+    <%= @order.bill_address.country.iso3 %>
+ <% end %>
+</p>
 <hr/>
 
 <h5>Order Summary (PROCESSING)</h5>
@@ -86,7 +100,7 @@ email <a href="mailto:info@diditbetter.com">info@diditbetter.com</a>.</p>
 
 <p>With Regards,</p>
 
-<p>DidItBetter.com Software Online Store<br />
+<p><strong>DidItBetter.com Software Online Store</strong><br />
 A division of Advantage International Inc.</p>
 
 <h5>Full Product Descriptions</h5>

@@ -8,11 +8,11 @@ processed.</p>
 <p><strong>Billing address:</strong></p>
 <p>
  <strong><%= @order.bill_address.full_name %></strong><br />
- <% if @order.company != "" %>
-   <%= @order.company %><br />
+ <% if @order.bill_address.company != "" %>
+   <%= @order.bill_address.company %><br />
  <% end %>
- <% if @order.phone != "" %>
-   <%= @order.phone %><br />
+ <% if @order.bill_address.phone != "" %>
+   <%= @order.bill_address.phone %><br />
  <% end %>
  <% if @order.email != "" %>
    <%= @order.email %><br />
