@@ -11,6 +11,8 @@ records.
 
 **Billing address:**
 
+** End user address:**
+
 * * *
 
 ##### Order Summary (PROCESSING)

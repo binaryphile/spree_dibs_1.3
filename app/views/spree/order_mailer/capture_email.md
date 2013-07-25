@@ -7,6 +7,8 @@ processed.
 
 **Billing address:**
 
+**End user address:**
+
 * * *
 
 ##### Order Summary
