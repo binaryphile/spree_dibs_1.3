@@ -18,6 +18,9 @@ module ApplicationHelper
     footer = <<eos
 Helpful Resources:
 
+Remote Support
+http://support.diditbetter.com/remote-support.aspx
+
 Troubleshooting
 http://support.diditbetter.com/Forums/Thread.aspx?pageid=1&mid=2&ItemID=1&thread=125
 
