@@ -8,36 +8,21 @@ module ApplicationHelper
           "#{pov.option_value.option_type.presentation} = #{pov.option_value.presentation}"
         }.join(", ")
       end
-      product_info << ""
-    end
-    product_info << "======"
-    product_info << "Subtotal: #{number_to_currency @order.item_total}"
-    @order.adjustments.each do |adjustment|
-      product_info << "#{raw(adjustment.label)} #{number_to_currency(adjustment.amount)}"
     end
     footer = <<eos
 Helpful Resources:
 
-Remote Support
-http://support.diditbetter.com/remote-support.aspx
+Remote Support http://support.diditbetter.com/remote-support.aspx
 
-Troubleshooting
-http://support.diditbetter.com/Forums/Thread.aspx?pageid=1&mid=2&ItemID=1&thread=125
+Troubleshooting http://support.diditbetter.com/Forums/Thread.aspx?pageid=1&mid=2&ItemID=1&thread=125
 
-Upgrading Add2Exchange
-http://support.diditbetter.com/kb/A2E_194.aspx
+Upgrading Add2Exchange http://support.diditbetter.com/kb/A2E_194.aspx
 
-How Add2Exchange Works
-http://support.diditbetter.com/Forums/Thread.aspx?pageid=1&mid=2&ItemID=3&thread=80
+How Add2Exchange Works http://support.diditbetter.com/Forums/Thread.aspx?pageid=1&mid=2&ItemID=3&thread=80
 
-How to terminate an employee with a  sync relationship
-http://support.diditbetter.com/Forums/Thread.aspx?pageid=1&mid=2&ItemID=1&thread=136
-
-Licensing
-http://support.diditbetter.com/product-activation.aspx
+Licensing http://support.diditbetter.com/product-activation.aspx
 eos
       
-    product_info << "Order Total: #{number_to_currency(@order.total)}"
     "#{product_info.join("\n")}\n\nClick here to purchase:\n\nhttp://#{Spree::Config[:site_url]}/dibs-referral?dibs_referral=#{URI::encode_www_form_component @current_user.email}&#{@order.dibs_referral_line_items.to_param}\n\n#{footer}"
   end
 end
