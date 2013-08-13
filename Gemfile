@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.13'
+gem 'rails', '3.2.14'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -37,7 +37,7 @@ gem 'foreman', group: :production
 
 # To use debugger
 #gem 'debugger'
-gem 'spree', github: 'binaryphile/spree', branch: 'develop' # Until https://github.com/spree/spree/pull/2608 is accepted
+gem 'spree', github: 'spree/spree', branch: '1-3-stable'
 gem 'spree_gateway', github: 'spree/spree_gateway', branch: '1-3-stable'
 gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: '1-3-stable'
 gem 'devise-encryptable'
@@ -45,5 +45,4 @@ gem 'spree_flexi_variants', github: 'jsqu99/spree_flexi_variants', branch: 'spre
 gem 'spree_print_invoice', github: 'binaryphile/spree_print_invoice', branch: '1-3-stable' # Until https://github.com/spree/spree_print_invoice/pull/22 is accepted
 gem 'spree_dibs_referral', github: 'binaryphile/spree_dibs_referral' # My extension so should come from my repo
 gem 'spree_email_to_friend', github: 'binaryphile/spree_email_to_friend', branch: '1-3-stable' # Cap deploy error fixed in my repo but not upstream - have to maintain
-gem 'select2-rails', github: 'argerim/select2-rails' # Until https://github.com/spree/spree/issues/2597 is closed
 
