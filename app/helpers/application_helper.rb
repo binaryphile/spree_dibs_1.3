@@ -23,6 +23,6 @@ How Add2Exchange Works http://support.diditbetter.com/Forums/Thread.aspx?pageid=
 Licensing http://support.diditbetter.com/product-activation.aspx
 eos
       
-    "#{product_info.join("\n")}\n\nClick here to purchase:\n\nhttp://#{Spree::Config[:site_url]}/dibs-referral?dibs_referral=#{URI::encode_www_form_component @current_user.email}&#{@order.dibs_referral_line_items.to_param}\n\n#{footer}"
+    "#{product_info.join("\n")}\n\nClick here to purchase:\n\nhttp://#{Spree::Config[:site_url]}/dibs-referral?dibs_referral=#{URI::encode_www_form_component @order.user.email}&#{@order.dibs_referral_line_items.to_param}\n\n#{footer}"
   end
 end
