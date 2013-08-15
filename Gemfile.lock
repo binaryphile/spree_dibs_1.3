@@ -6,15 +6,6 @@ GIT
       spree_core (~> 1.3.0)
 
 GIT
-  remote: git://github.com/binaryphile/spree_email_to_friend.git
-  revision: 41070f120676883d2a6ff2e367e3b65e8a533d52
-  branch: 1-3-stable
-  specs:
-    spree_email_to_friend (1.3)
-      recaptcha (>= 0.3.1)
-      spree_core (~> 1.3.0)
-
-GIT
   remote: git://github.com/binaryphile/spree_print_invoice.git
   revision: b6d7ba6de2964fdfa91453a79303673d6d0d0b90
   branch: 1-3-stable
@@ -85,6 +76,15 @@ GIT
       devise (~> 2.2.3)
       devise-encryptable (= 0.1.2)
       spree_core
+
+GIT
+  remote: git://github.com/spree/spree_email_to_friend.git
+  revision: 03bc6eb450be60aff035f313cda63f7105628ffe
+  branch: 1-3-stable
+  specs:
+    spree_email_to_friend (1.3)
+      recaptcha (>= 0.3.1)
+      spree_core (~> 1.3.0)
 
 GIT
   remote: git://github.com/spree/spree_gateway.git

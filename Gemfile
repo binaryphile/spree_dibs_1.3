@@ -44,5 +44,5 @@ gem 'devise-encryptable'
 gem 'spree_flexi_variants', github: 'jsqu99/spree_flexi_variants', branch: 'spree-1-3-stable'
 gem 'spree_print_invoice', github: 'binaryphile/spree_print_invoice', branch: '1-3-stable' # Until https://github.com/spree/spree_print_invoice/pull/22 is accepted
 gem 'spree_dibs_referral', github: 'binaryphile/spree_dibs_referral' # My extension so should come from my repo
-gem 'spree_email_to_friend', github: 'binaryphile/spree_email_to_friend', branch: '1-3-stable' # Cap deploy error fixed in my repo but not upstream - have to maintain
+gem 'spree_email_to_friend', github: 'spree/spree_email_to_friend', branch: '1-3-stable'
 
