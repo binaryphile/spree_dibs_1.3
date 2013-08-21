@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>We're sorry, but something went wrong (500)</title>
+  <title>Oops!</title>
   <style type="text/css">
     body { background-color: #fff; color: #666; text-align: center; font-family: arial, sans-serif; }
     div.dialog {
@@ -14,12 +14,26 @@
     }
     h1 { font-size: 100%; color: #f00; line-height: 1.5em; }
   </style>
-</head>
+  <script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-194272-1']);
+    _gaq.push(['_setDomainName', 'diditbetter.com']);
+    _gaq.push(['_trackEvent, 'Error', '500', 'page: ' + document.location.pathname + document.location.search + ' ref: ' + document.referrer]);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+
+    </head>
 
 <body>
   <!-- This file lives in public/500.html -->
   <div class="dialog">
-    <h1>We're sorry, but something went wrong.</h1>
+    <h1>We're sorry, but something went wrong.  The error has been logged and we will investigate it </h1>
   </div>
 </body>
 </html>
