@@ -4,6 +4,9 @@
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', '<%= tracker.analytics_id %>']);
     _gaq.push(['_setDomainName', 'diditbetter.com']);
+    <% if flash[:commerce_tracking] && @order.present? %>
+    _gaq.push(['_setCustomVar', 1, 'Engagement', 'purchaser', 1]);
+    <% end %>
     _gaq.push(['_trackPageview']);
 
     <% if flash[:commerce_tracking] && @order.present? %>
