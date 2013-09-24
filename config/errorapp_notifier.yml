@@ -1,0 +1,6 @@
+# Place this file into config folder of your RailsRoot
+api_key: 'c6e55d46-4aa9-493d-b47a-56a704fe76e6'
+development:
+ enabled: false
+production:
+  enabled: true
