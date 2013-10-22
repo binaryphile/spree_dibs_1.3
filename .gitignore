@@ -27,3 +27,4 @@ desktop.ini
 /bin/
 *.patch
 /.idea/
+config/initializers/secret_token.rb
