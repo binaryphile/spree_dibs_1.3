@@ -184,8 +184,6 @@ GEM
     devise-encryptable (0.1.2)
       devise (>= 2.1.0)
     dotenv (0.8.0)
-    errorapp_notifier (0.0.3)
-      rack
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
@@ -353,7 +351,6 @@ DEPENDENCIES
   capistrano
   coffee-rails (~> 3.2.1)
   devise-encryptable
-  errorapp_notifier
   foreman
   jquery-rails
   mysql2
