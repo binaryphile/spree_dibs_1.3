@@ -12,7 +12,6 @@ set :rails_env, 'production'
 
 set :scm, :git
 set :repository,  "git://github.com/binaryphile/spree_dibs_1.3"
-set :branch,      "master"
 set :deploy_to,   "/data/#{application}"
 set :deploy_via,  :remote_cache
 set :use_sudo,    false
