@@ -1,4 +1,5 @@
 <!--
   insert_bottom 'div.product-image'
+  sequence after: 'remove_shared_product_price_after_image'
 -->
 <span class="price selling" itemprop="price"><%= number_to_currency product.price %></span>
