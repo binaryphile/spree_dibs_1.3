@@ -1,17 +1,17 @@
-{::options auto_ids="false"/}
+{::options auto_ids="false" /}
 
 Dear ,
 
-Thank you for placing your order at DidItBetter.com. Your order should
-be reviewed and processed within 24 to 48 hours. Once your order has
-been processed, you will receive an email from DidItBetter.com.
+Thank you for your DidItBetter.com Software order.
 
-Please review and retain the following order information for your
-records.
+Your order will be reviewed and processed within 24 to 48 hours. Once
+your order has been processed, you will receive an email confirmation.
+
+Please retain the following information for your records.
 
 **Billing address:**
 
-** End user address:**
+**End user address:**
 
 * * *
 
@@ -21,67 +21,81 @@ records.
 
 * * *
 
-Thank you for your business. Please note \"Advantage Intl Computers\" will
-appear on your credit card statement for this order.
+We appreciate your business.  Note that \"DidItBetter.com  Odessa, FL 813
+977 5739\" will appear on your credit card statement for this order.
 
-If you placed a software licensing order, download the software or check
-for updates at [http://www.diditbetter.com/store.aspx][1]{:
-target="_blank"}.
+**If your order included a software license:**
 
-To access our Downloads area, click on Downloads, and log in. If this is
-your first time downloading, please register to create a new account to
-access our Downloads area.
+Download your software (or check for updates) at
+<http://support.diditbetter.com/downloads.aspx>.  If you don't yet have
+an account you will need to create one.
 
-Product Activation: Once the software or update is installed, submit
-your registration request from the program to request your license key
-\-- please refer to the installation guide for instructions. License keys
-are issued Monday through Friday 10 am to 4 pm EST (excluding holidays)
-within 1 to 2 business days from the time we receive your completed
-registration request. Incomplete or incorrect registration requests will
-delay the processing of your request. Please note your software license
-is a perpetual license for the version you initially purchased and is
-licensed to the license address you specify in your registration
-request. If you are a reseller purchasing on behalf of an end user,
-please make sure to include the end user\'s company name, contact name of
-the individual authorizing the purchase at the end user company, end
-user\'s phone and end user\'s email address.
+##### Product Activation
 
-If you placed a single remote support session order, Customer Care will
-contact you to schedule your appointment. Please review the section
-\'Before Your Appointment\' and \'Initiating Your Appointment\' at
-[http://support.diditbetter.com/remote-support.aspx][2]{:
-target="_blank"} prior to your scheduled session. If you purchased one
-of our premium support packages and would like to schedule a session,
-please submit a support request to provide our technical team some
-background on what we can help you with; go to
-[http://support.diditbetter.com/][3]{: target="_blank"} and select the
-\'Request Support\' link.
+Once the software or update is installed, submit your registration
+request from the program to request your license key.  Refer to the
+instructions in your product's installation guide.
 
-Terms and Conditions: All sales are final. We offer no refunds and no
-returns once the software license(s), value bundles, software assurance
-subscription/renewals, add ons, service agreements, and/or support is
-purchased. No cancellations. No exchanges. The reason for this policy is
-that you have the opportunity to fully evaluate the solution in advance
-to determine it to be suitable for your needs and receive email support
-on the solution before purchasing. Please note that by placing your
-order and purchasing anything on our online store and/or receiving your
-license key via email, you have chosen to accept our \'No Return/No
-Refund\' policy.
+License keys are issued Monday through Friday 10 am to 4 pm EST
+(excluding holidays) within 1 to 2 business days from the time we
+receive your completed registration request. Incomplete or incorrect
+registration requests will delay the processing of your request.
 
-For assistance with your web order, please contact us: USA Customers
-(800) 837 8636 ext 100 / Outside the USA 001 813 977 5739. You may also
-email [info@diditbetter.com](mailto:info@diditbetter.com).
+Please note your software license is a perpetual license for the version
+you initially purchased and is licensed to the license address you
+specify in your registration request. If you are a reseller purchasing
+on behalf of an end user, please make sure to include the end user\'s
+company name, contact name of the individual authorizing the purchase at
+the end user company, end user\'s phone and end user\'s email address.
+
+##### Remote Support
+
+If you've ordered remote support, Customer Care will contact you to
+schedule your appointment.
+
+Please review _Before Your Appointment_ and _Initiating Your
+Appointment_ at <http://support.diditbetter.com/remote-support.aspx>{:
+target="_blank"} in preparation.
+
+If you purchased premium support session, please submit a support
+request with your background information.  Go to
+<http://support.diditbetter.com/>{: target="_blank"} and select the
+_Request Support_ link.
+
+##### Free Self Help Resources
+
+Please visit and search our support site for product documentation and
+guides, helpful How To technical articles, troubleshooting tips, forums,
+and more useful support-related topics.
+
+For email support if you have valid software assurance in place, please
+open a ticket online.   If you placed a Premier Support order, please
+also open a ticket online to provide our technical team detailed
+background on your case and request to schedule a remote session.
+
+##### Terms and Conditions
+
+All sales are final. We offer no refunds and no returns once the product
+license(s), software assurance subscription/renewals, add ons, service
+agreements, and/or support is purchased. No cancellations.
+
+The reason for this policy is you have the opportunity to fully evaluate
+the product in advance to determine it to be suitable for your needs and
+receive support on the solution via email before purchasing. Please note
+that by placing your order and purchasing anything on our online store
+and/or receiving your license key via email, you have chosen to accept
+our \'No Return\' policy and it is not possible to return the software
+nor support services for a refund.
+
+For assistance with your web order, please call us at (800) 837 8636.
+For customers outside the USA, please call +1 813 977 5739.
 
 With Regards,
 
-DidItBetter.com Software Online Store  
+**DidItBetter.com Software Online Store**
 A division of Advantage International Inc.
 
 ##### Full Product Descriptions
 
 For your records, the following are the complete product descriptions
 for your items:
-
-[1]: http://www.diditbetter.com/store.aspx
-[2]: http://support.diditbetter.com/remote-support.aspx
-[3]: http://support.diditbetter.com/
