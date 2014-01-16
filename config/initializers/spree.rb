@@ -10,6 +10,7 @@ Spree.config do |config|
   # Uncomment to override the default site name.
   # config.site_name = "Spree Demo Site"
   require 'product_filters'
+  config.allow_ssl_in_staging = false
 end
 
 Spree.user_class = "Spree::User"

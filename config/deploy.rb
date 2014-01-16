@@ -8,7 +8,6 @@ require 'capistrano/ext/multistage'
 set :application, "spree"
 set :user, 'spree'
 set :group, 'www-data'
-set :rails_env, 'production'
 
 set :scm, :git
 set :repository,  "git://github.com/binaryphile/spree_dibs_1.3"
@@ -64,4 +63,3 @@ after 'deploy:restart', 'foreman:restart'
 task :uname do
   run "uname -a"
 end
-
